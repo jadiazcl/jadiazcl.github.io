@@ -11,24 +11,47 @@
       media="screen"
       href="bootstrap.min.css"
     />
+    <style>
+      .mobile-description{
+        @media (width >= 768px) {
+            display: none
+        }
+      }
+      .desktop-description{
+        @media (width < 768px) {
+            display: none
+        }
+      }
+    </style>
     <!--script src="main.js"></script-->
   </head>
   <body class="container pt-4">
     <div class="row">
-      <div class="col-lg-3">
-        <img src="image.jpeg" width="250px" />
+      <div class="col-lg-3 col-md-6  px-4">
+        <center><img src="image.jpeg" width="250px" /></center>
+        <!-- Personal Description -->
+        <div class="mobile-description text-center">
+          <h1>Jorge Ariel Díaz Matte</h1>
+          <h3>PhD Student in Computer Science</h3>
+          <h4>MSc. Computer Science</h4>
+          <p>
+            Part-time Professor, Department of Informatics <br />
+            Universidad Técnica Federico Santa María, Santiago, Chile
+          </p>
+        </div>
         <!-- Contact Description -->
-        <div class="mt-4">
+        <div class="mt-4  text-justify">
           <h4>Contact Information</h4>          
           <ul>
             <li>Email: jorge.diazma@usm.cl</li>
+            <li>Github: <a href="https://github.com/jadiazcl">jadiazcl</a></li>
             <li>ResearchGate <a href="https://www.researchgate.net/profile/Jorge-Diaz-Matte-2">profile</a> </li>
             <li>LinkedIn <a href="https://www.linkedin.com/in/jadiazcl/">profile</a> </li>
           </ul>        
         </div> 
         <!-- Favorite Retro Games Description -->
         <div class="mt-4">
-          <h4>Favorite Retro Games</h4>          
+          <h4>My Top Retro Games</h4>          
           <ul>            
             <li><a href="https://store.steampowered.com/app/2280/DOOM_1993">DOOM I & II</a> </li>
             <li><a href=" https://starcraft.blizzard.com/es-es/">StarCraft I</a> </li>
@@ -37,9 +60,9 @@
           </ul>        
         </div>        
       </div>
-      <div class="col-lg-9">
+      <div class="col-lg-9 col-md-6 px-4">
         <!-- Personal Description -->
-        <div>
+        <div class="desktop-description">
           <h1>Jorge Ariel Díaz Matte</h1>
           <h3>PhD Student in Computer Science</h3>
           <h4>MSc. Computer Science</h4>
@@ -73,7 +96,7 @@
         <!-- Teaching Description -->
         <div>
           <h4>
-            Classes I instruct
+            Teaching
           </h4>
           <p>
             The undergraduate courses I teach are as follows:
