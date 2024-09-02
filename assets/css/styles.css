@@ -1,0 +1,15 @@
+.img-profile {
+    width: 100%;
+    height: auto;
+  }
+
+.mobile-description{
+    @media (width >= 768px) {
+        display: none
+    }
+}
+.desktop-description{
+    @media (width < 768px) {
+        display: none
+    }
+}
